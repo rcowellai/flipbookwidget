@@ -1,0 +1,123 @@
+/* src/FlipBook.css */
+
+.flipbook-container {
+    display: block;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .demo-book {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  /* Navigation buttons styling */
+  .nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 5;
+    background: rgba(200, 200, 200, 0.6);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0.55em 0.75em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  /* Default positioning for larger screens */
+  .nav-button-left {
+    left: 50%;
+    transform: translate(calc(-100% - 10px), 50%);
+  }
+  
+  .nav-button-right {
+    left: 50%;
+    transform: translate(10px, 50%);
+  }
+  
+  .nav-button:hover {
+    background: rgba(200, 200, 200, 0.75);
+  }
+  
+  .nav-button:focus {
+    outline: none;
+  }
+  
+  .page {
+    background: white;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .page-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .page-image {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0;
+    object-fit: cover;
+  }
+  
+  .page-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .page-cover {
+    background: #333;
+    color: white;
+  }
+  
+  .page-footer {
+    display: none;
+  }
+  
+  /* Responsive adjustments for navigation buttons on smaller screens */
+  @media (max-width: 400px) {
+    .nav-button-left,
+    .nav-button-right {
+      left: 50%;
+    }
+    .nav-button-left {
+      /* Use a slightly reduced fixed offset so the button remains near the left edge of the flipbook */
+      transform: translate(calc(-100% - 2%), 50%);
+    }
+    .nav-button-right {
+      transform: translate(2%, 50%);
+    }
+  }
+  
+  /* For Webkit browsers (Chrome, Safari, Edge) */
+  .page-content::-webkit-scrollbar,
+  .page::-webkit-scrollbar {
+    display: none;
+  }
+  
