@@ -18,9 +18,15 @@ import page_10_png from './images/page_10_png.png';
 import page_11_png from './images/page_11_png.png';
 import page_12_png from './images/page_12_png.png';
 import page_13_png from './images/page_13_png.png';
+import page_14_png from './images/page_14_png.png';
+import page_15_png from './images/page_15_png.png';
+import page_16_png from './images/page_16_png.png';
+import page_17_png from './images/page_17_png.png';
+import page_18_png from './images/page_18_png.png';
+import page_19_png from './images/page_19_png.png';
 
-const Page = React.forwardRef(({ content, isImage }, ref) => (
-  <div className="page" ref={ref}>
+const Page = React.forwardRef(({ content, isImage, pageNumber }, ref) => (
+  <div className={`page ${pageNumber === 1 ? 'page-1' : ''}`} ref={ref}>
     <div className="page-content">
       {isImage ? (
         <img src={content} alt="Page Content" className="page-image" loading="lazy" />
@@ -62,21 +68,21 @@ function FlipBook() {
     <div className="flipbook-container">
       <HTMLFlipBook
         width={400}
-        height={340}
+        height={320}
         size="stretch"
         minWidth={150}   // Minimum width per page set to 150px
         maxWidth={1000}
-        minHeight={170}
+        minHeight={120}
         maxHeight={850}
         flippingTime={700}
-        maxShadowOpacity={0.2}
+        maxShadowOpacity={0}
         showCover={true}
         mobileScrollSupport
         className="demo-book"
         ref={flipBookRef}
       >
         {/* First page (cover) */}
-        <Page content={page_1_png} isImage />
+        <Page content={page_1_png} isImage pageNumber={1} />
 
         {/* Middle pages (paired) */}
         <Page content={page_2_png} isImage />
@@ -91,9 +97,12 @@ function FlipBook() {
         <Page content={page_11_png} isImage />
         <Page content={page_12_png} isImage />
         <Page content={page_13_png} isImage />
-
-        {/* Last page (back cover) */}
-        {/* Removed <Page content={page_14_png} isImage /> to end book on pages 12 & 13 */}
+        <Page content={page_14_png} isImage />
+        <Page content={page_15_png} isImage />
+        <Page content={page_16_png} isImage />
+        <Page content={page_17_png} isImage />
+        <Page content={page_18_png} isImage />
+        <Page content={page_19_png} isImage />
       </HTMLFlipBook>
 
       {/* Navigation buttons */}
