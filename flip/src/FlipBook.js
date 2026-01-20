@@ -5,25 +5,25 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import './FlipBook.css';
 
 // Import images
-import page_1_png from './images/page_1_png.webp';
-import page_2_png from './images/page_2_png.webp';
-import page_3_png from './images/page_3_png.webp';
-import page_4_png from './images/page_4_png.webp';
-import page_5_png from './images/page_5_png.webp';
-import page_6_png from './images/page_6_png.webp';
-import page_7_png from './images/page_7_png.webp';
-import page_8_png from './images/page_8_png.webp';
-import page_9_png from './images/page_9_png.png';
-import page_10_png from './images/page_10_png.png';
-import page_11_png from './images/page_11_png.png';
-import page_12_png from './images/page_12_png.png';
-import page_13_png from './images/page_13_png.png';
-import page_14_png from './images/page_14_png.png';
-import page_15_png from './images/page_15_png.png';
-import page_16_png from './images/page_16_png.png';
-import page_17_png from './images/page_17_png.png';
-import page_18_png from './images/page_18_png.png';
-import page_19_png from './images/page_19_png.png';
+import page_1_png from './images/page1.png';
+import page_2_png from './images/page2.png';
+import page_3_png from './images/page3.png';
+import page_4_png from './images/page4.png';
+import page_5_png from './images/page5.png';
+import page_6_png from './images/page6.png';
+import page_7_png from './images/page7.png';
+import page_8_png from './images/page8.png';
+import page_9_png from './images/page9.png';
+import page_10_png from './images/page10.png';
+import page_11_png from './images/page11.png';
+import page_12_png from './images/page12.png';
+import page_13_png from './images/page13.png';
+import page_14_png from './images/page14.png';
+import page_15_png from './images/page15.png';
+import page_16_png from './images/page16.png';
+import page_17_png from './images/page17.png';
+import page_18_png from './images/page18.png';
+import page_19_png from './images/page19.png';
 
 const Page = React.forwardRef(({ content, isImage, pageNumber }, ref) => (
   <div className={`page ${pageNumber === 1 ? 'page-1' : ''}`} ref={ref}>
