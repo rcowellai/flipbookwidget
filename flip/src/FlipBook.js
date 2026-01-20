@@ -5,14 +5,14 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import './FlipBook.css';
 
 // Import images
-import page_1_png from './images/page_1_png.png';
-import page_2_png from './images/page_2_png.png';
-import page_3_png from './images/page_3_png.png';
-import page_4_png from './images/page_4_png.png';
-import page_5_png from './images/page_5_png.png';
-import page_6_png from './images/page_6_png.png';
-import page_7_png from './images/page_7_png.png';
-import page_8_png from './images/page_8_png.png';
+import page_1_png from './images/page_1_png.webp';
+import page_2_png from './images/page_2_png.webp';
+import page_3_png from './images/page_3_png.webp';
+import page_4_png from './images/page_4_png.webp';
+import page_5_png from './images/page_5_png.webp';
+import page_6_png from './images/page_6_png.webp';
+import page_7_png from './images/page_7_png.webp';
+import page_8_png from './images/page_8_png.webp';
 import page_9_png from './images/page_9_png.png';
 import page_10_png from './images/page_10_png.png';
 import page_11_png from './images/page_11_png.png';
