@@ -5,25 +5,25 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import './FlipBook.css';
 
 // Import images
-import page_1_png from './images/page1.png';
-import page_2_png from './images/page2.png';
-import page_3_png from './images/page3.png';
-import page_4_png from './images/page4.png';
-import page_5_png from './images/page5.png';
-import page_6_png from './images/page6.png';
-import page_7_png from './images/page7.png';
-import page_8_png from './images/page8.png';
-import page_9_png from './images/page9.png';
-import page_10_png from './images/page10.png';
-import page_11_png from './images/page11.png';
-import page_12_png from './images/page12.png';
-import page_13_png from './images/page13.png';
-import page_14_png from './images/page14.png';
-import page_15_png from './images/page15.png';
-import page_16_png from './images/page16.png';
-import page_17_png from './images/page17.png';
-import page_18_png from './images/page18.png';
-import page_19_png from './images/page19.png';
+import page_1_png from './images/page1.webp';
+import page_2_png from './images/page2.webp';
+import page_3_png from './images/page3.webp';
+import page_4_png from './images/page4.webp';
+import page_5_png from './images/page5.webp';
+import page_6_png from './images/page6.webp';
+import page_7_png from './images/page7.webp';
+import page_8_png from './images/page8.webp';
+import page_9_png from './images/page9.webp';
+import page_10_png from './images/page10.webp';
+import page_11_png from './images/page11.webp';
+import page_12_png from './images/page12.webp';
+import page_13_png from './images/page13.webp';
+import page_14_png from './images/page14.webp';
+import page_15_png from './images/page15.webp';
+import page_16_png from './images/page16.webp';
+import page_17_png from './images/page17.webp';
+import page_18_png from './images/page18.webp';
+import page_19_png from './images/page19.webp';
 
 const Page = React.forwardRef(({ content, isImage, pageNumber }, ref) => (
   <div className={`page ${pageNumber === 1 ? 'page-1' : ''}`} ref={ref}>
@@ -68,7 +68,7 @@ function FlipBook() {
     <div className="flipbook-container">
       <HTMLFlipBook
         width={400}
-        height={320}
+        height={323}
         size="stretch"
         minWidth={150}   // Minimum width per page set to 150px
         maxWidth={1000}

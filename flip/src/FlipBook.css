@@ -83,9 +83,15 @@
   
   .page-image {
     width: 100%;
-    height: 100%;
-    flex: 1 1 0;
-    object-fit: cover;
+    height: auto;  /* Changed from 100% */
+    max-height: 100%;  /* Prevent overflow */
+    object-fit: contain;
+    image-rendering: auto; /* important */
+
+    /* GPU rendering optimizations for 3D transforms */
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
   
   .page-text {
