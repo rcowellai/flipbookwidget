@@ -18,12 +18,6 @@ import page_10_png from './images/page10.webp';
 import page_11_png from './images/page11.webp';
 import page_12_png from './images/page12.webp';
 import page_13_png from './images/page13.webp';
-import page_14_png from './images/page14.webp';
-import page_15_png from './images/page15.webp';
-import page_16_png from './images/page16.webp';
-import page_17_png from './images/page17.webp';
-import page_18_png from './images/page18.webp';
-import page_19_png from './images/page19.webp';
 
 const Page = React.forwardRef(({ content, isImage, pageNumber }, ref) => (
   <div className={`page ${pageNumber === 1 ? 'page-1' : ''}`} ref={ref}>
@@ -97,12 +91,6 @@ function FlipBook() {
         <Page content={page_11_png} isImage />
         <Page content={page_12_png} isImage />
         <Page content={page_13_png} isImage />
-        <Page content={page_14_png} isImage />
-        <Page content={page_15_png} isImage />
-        <Page content={page_16_png} isImage />
-        <Page content={page_17_png} isImage />
-        <Page content={page_18_png} isImage />
-        <Page content={page_19_png} isImage />
       </HTMLFlipBook>
 
       {/* Navigation buttons */}
